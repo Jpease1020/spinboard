@@ -8,8 +8,9 @@ function updateRead(){
       data: {"change": 'true'},
       success: function(response){
         replaceReadStatus($readStatus, response)
-        $('.true').parents('.panel').toggleClass("greyed-out")
-        $('.false').parents('.panel').removeClass("greyed-out")
+        $('.false').parent().parent().removeClass('greyed-out')
+        $('.true').parent().parent().removeClass('greyed-out')
+        $('.true').parent().parent().addClass('greyed-out')
       }, error: function(xhr){
         console.log(xhr.responseText)
       }

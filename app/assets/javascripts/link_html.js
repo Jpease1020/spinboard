@@ -13,7 +13,7 @@ function linkHtml(link){
         '<div class="statement">' +
           '<h5>I have read this: </h5>' +
         '</div>' +
-        '<div class="read-status">' +
+        '<div class="' + link.read + '">' +
           link.read +
         '</div>' +
         '<div class="change-read-status">' +
