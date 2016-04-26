@@ -3,4 +3,6 @@ $(document).ready(function(){
   updateRead();
   editLinks();
   sortByReadStatus();
+  sortByTitle();
+  sortByUrl();
 });
