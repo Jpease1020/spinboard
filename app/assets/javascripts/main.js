@@ -1,5 +1,10 @@
 $(document).ready(function(){
   getLinks();
   updateRead();
-  editLinks()
+  editLinks();
+  sortByReadStatus();
+  sortByTitle();
+  sortByUrl();
+  searchLinks();
+  viewAll();
 });

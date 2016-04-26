@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails-api/active_model_serializers.git
-  revision: d43b32a4d338ecaf72f93ac4cca11a0919fe226f
+  revision: 0433869cc1d59af04c115feff1504b4e8b22eef0
   specs:
     active_model_serializers (0.10.0.rc5)
       actionpack (>= 4.0)
@@ -93,6 +93,8 @@ GEM
     json (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
+    lodash-rails (4.6.1)
+      railties (>= 3.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -220,6 +222,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  lodash-rails
   pg (~> 0.15)
   quiet_assets
   rails (= 4.2.5)
