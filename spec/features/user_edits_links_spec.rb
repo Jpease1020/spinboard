@@ -9,11 +9,12 @@ RSpec.describe "User edits links", type: :feature do
     link = Link.create!(title: "a title", url: "http://url.com", user_id: user.id)
     visit links_path
 
-    click_on ()
-    visit links_path
-    expect(page).to have_content('true')
+    el = find(:xpath, "//span[@contenteditable='true' and @class='title']")
+    el.set("A new title")
+    el.native.send_keys(:return)
 
-    click_on ("Mark as Read/Unread")
-    expect(page).to have_content('false')
+    visit links_path
+
+    expect(page).to have_content("A new title")
   end
 end
