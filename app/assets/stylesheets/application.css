@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+.greyed-out {
+  background-color: white;
+  filter:alpha(opacity=50);
+  opacity: 0.5;
+  z-index: 20;
+}
