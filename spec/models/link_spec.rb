@@ -15,7 +15,7 @@ RSpec.describe Link, type: :model do
       expect(link.read).to eq(false)
     end
 
-    it "does not create a link with invalid url"
+    it "does not create a link with invalid url" do
       assert_equal(0, Link.count)
       link = Link.create(title: "This is the title if the link", url: "something.com")
       assert_equal(0, Link.count)
