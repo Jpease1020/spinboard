@@ -6,7 +6,6 @@ RSpec.describe "User adds a new link", type: :feature do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
     visit root_path
-    save_and_open_page
     visit links_path
     fill_in "Title", with: "My new link title"
     fill_in "Url", with: "https://thing.com"
