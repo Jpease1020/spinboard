@@ -1,6 +1,6 @@
 function linkHtml(link){
   var html = (
-    '<div class="panel panel-default read-' + link.read + '" data-id="'+ link.id +'">' +
+    '<div class="panel panel-default link read-' + link.read +'" data-id="'+ link.id +'">' +
       '<div class="panel-heading">' +
         '<div class="container">' +
           '<div class="row">' +
