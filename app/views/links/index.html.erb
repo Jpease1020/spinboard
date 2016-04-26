@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="container">
+    <%= form_for :link, url: links_path do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+      <%= f.submit "Create Link", class: "btn btn-default" %>
+     <% end %>
+  </div>
+</div>
+
+<div class="links-index">
+  
+</div>
