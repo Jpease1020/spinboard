@@ -1,5 +1,6 @@
 $(document).ready(function(){
   getLinks();
   updateRead();
-  editLinks()
+  editLinks();
+  // sortByReadStatus();
 });
